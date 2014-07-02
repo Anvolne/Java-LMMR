@@ -1,15 +1,16 @@
 package com.TheGamer.LMMR;
 
-import com.TheGamer.LMMR.configuration.ConfigurationHandler;
+import com.TheGamer.LMMR.handler.ConfigurationHandler;
 import com.TheGamer.LMMR.proxy.IProxy;
 import com.TheGamer.LMMR.reference.Reference;
+import com.TheGamer.LMMR.utility.LogHelper;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class LMMR {
 
     @Mod.Instance(Reference.MOD_ID)
@@ -21,16 +22,17 @@ public class LMMR {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event){
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        LogHelper.info("Pre Initialization Complete!");
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event){
-
+        LogHelper.info("Initialization Complete!");
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event){
-
+        LogHelper.info("Post Initialization Complete!");
     }
 
 }
