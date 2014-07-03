@@ -4,6 +4,7 @@ import com.TheGamer.LMMR.handler.ConfigurationHandler;
 import com.TheGamer.LMMR.proxy.IProxy;
 import com.TheGamer.LMMR.reference.Reference;
 import com.TheGamer.LMMR.utility.LogHelper;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -22,6 +23,7 @@ public class LMMR {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event){
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         LogHelper.info("Pre Initialization Complete!");
     }
 
