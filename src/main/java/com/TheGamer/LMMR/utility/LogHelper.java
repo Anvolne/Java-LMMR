@@ -1,7 +1,7 @@
-package com.TheGamer.LMMR.utility;
+package com.TheGamer.lmmr.utility;
 
 
-import com.TheGamer.LMMR.reference.Reference;
+import com.TheGamer.lmmr.reference.Reference;
 import cpw.mods.fml.common.FMLLog;
 import org.apache.logging.log4j.Level;
 

@@ -1,6 +1,6 @@
-package com.TheGamer.LMMR.handler;
+package com.TheGamer.lmmr.handler;
 
-import com.TheGamer.LMMR.reference.Reference;
+import com.TheGamer.lmmr.reference.Reference;
 import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.common.config.Configuration;

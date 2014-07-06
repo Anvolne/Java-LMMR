@@ -1,9 +1,10 @@
-package com.TheGamer.LMMR;
+package com.TheGamer.lmmr;
 
-import com.TheGamer.LMMR.handler.ConfigurationHandler;
-import com.TheGamer.LMMR.proxy.IProxy;
-import com.TheGamer.LMMR.reference.Reference;
-import com.TheGamer.LMMR.utility.LogHelper;
+import com.TheGamer.lmmr.handler.ConfigurationHandler;
+import com.TheGamer.lmmr.init.ModItems;
+import com.TheGamer.lmmr.proxy.IProxy;
+import com.TheGamer.lmmr.reference.Reference;
+import com.TheGamer.lmmr.utility.LogHelper;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -25,6 +26,8 @@ public class LMMR {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         LogHelper.info("Pre Initialization Complete!");
+
+        ModItems.init();
     }
 
     @Mod.EventHandler

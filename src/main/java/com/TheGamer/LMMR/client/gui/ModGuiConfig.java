@@ -1,8 +1,8 @@
-package com.TheGamer.LMMR.client.gui;
+package com.TheGamer.lmmr.client.gui;
 
 
-import com.TheGamer.LMMR.handler.ConfigurationHandler;
-import com.TheGamer.LMMR.reference.Reference;
+import com.TheGamer.lmmr.handler.ConfigurationHandler;
+import com.TheGamer.lmmr.reference.Reference;
 import cpw.mods.fml.client.config.GuiConfig;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.ConfigElement;

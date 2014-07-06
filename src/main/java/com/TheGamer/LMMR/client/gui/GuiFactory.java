@@ -1,4 +1,4 @@
-package com.TheGamer.LMMR.client.gui;
+package com.TheGamer.lmmr.client.gui;
 
 import cpw.mods.fml.client.IModGuiFactory;
 import net.minecraft.client.Minecraft;
