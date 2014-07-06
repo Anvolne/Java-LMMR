@@ -39,5 +39,4 @@ public class LMMR {
     public void postInit(FMLPostInitializationEvent event){
         LogHelper.info("Post Initialization Complete!");
     }
-
 }
