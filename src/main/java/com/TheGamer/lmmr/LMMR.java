@@ -1,6 +1,7 @@
 package com.TheGamer.lmmr;
 
 import com.TheGamer.lmmr.handler.ConfigurationHandler;
+import com.TheGamer.lmmr.init.ModBlocks;
 import com.TheGamer.lmmr.init.ModItems;
 import com.TheGamer.lmmr.proxy.IProxy;
 import com.TheGamer.lmmr.reference.Reference;
@@ -28,6 +29,8 @@ public class LMMR {
         LogHelper.info("Pre Initialization Complete!");
 
         ModItems.init();
+
+        ModBlocks.init();
     }
 
     @Mod.EventHandler
